@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.verification.structural.UserDataAPIVerification
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 5, Errors: 4, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.verification.structural.UserDataAPIVerification
+getDetailsByUserName$UserNameParameterPathVariableAnnotation  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.structural.UserDataAPIVerification.getDetailsByUserName$UserNameParameterPathVariableAnnotation(UserDataAPIVerification.java:172)
+
+addUser$UserDTOParameterRequestBodyAnnotation  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.structural.UserDataAPIVerification.addUser$UserDTOParameterRequestBodyAnnotation(UserDataAPIVerification.java:125)
+
+attributes  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{environment=interface org.springframework.core.env.Environment, userDataService=interface com.infy.userdata.service.UserDataService}> but was: <{userDataService=interface com.infy.userdata.service.UserDataService}>
+	at com.verification.structural.UserDataAPIVerification.attributes(UserDataAPIVerification.java:61)
+
+annotations$RestControllerAnnotation  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.structural.UserDataAPIVerification.annotations$RestControllerAnnotation(UserDataAPIVerification.java:34)
+
+attributes$UserDataServiceAttributeAutowiredAnnotation  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.structural.UserDataAPIVerification.attributes$UserDataServiceAttributeAutowiredAnnotation(UserDataAPIVerification.java:72)
+
+attributes$EnvironmentAttributeAutowiredAnnotation  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchFieldException: environment
+	at com.verification.structural.UserDataAPIVerification.attributes$EnvironmentAttributeAutowiredAnnotation(UserDataAPIVerification.java:80)
+
+getDetailsByUserName$GetMappingAnnotation  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.verification.structural.UserDataAPIVerification.getDetailsByUserName$GetMappingAnnotation(UserDataAPIVerification.java:157)
+
+addUser$PostMappingAnnotation  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.verification.structural.UserDataAPIVerification.addUser$PostMappingAnnotation(UserDataAPIVerification.java:110)
+
+annotations$RequestMappingAnnotation  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.verification.structural.UserDataAPIVerification.annotations$RequestMappingAnnotation(UserDataAPIVerification.java:43)
+

@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.verification.structural.UserDataApplicationTestsVerification
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.verification.structural.UserDataApplicationTestsVerification
+attributes$UserDataServiceAttributeInjectMocksAnnotation  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.structural.UserDataApplicationTestsVerification.attributes$UserDataServiceAttributeInjectMocksAnnotation(UserDataApplicationTestsVerification.java:64)
+
+annotations  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.structural.UserDataApplicationTestsVerification.annotations(UserDataApplicationTestsVerification.java:27)
+
+attributes$UserDataRepositoryAttributeMockAnnotation  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.structural.UserDataApplicationTestsVerification.attributes$UserDataRepositoryAttributeMockAnnotation(UserDataApplicationTestsVerification.java:56)
+
+getDetailsByUserNameNoDetailsFound$TestAnnotation  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.structural.UserDataApplicationTestsVerification.getDetailsByUserNameNoDetailsFound$TestAnnotation(UserDataApplicationTestsVerification.java:72)
+

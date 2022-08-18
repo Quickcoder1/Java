@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.verification.logical.UserDataApplicationTestsVerification
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.471 s <<< FAILURE! - in com.verification.logical.UserDataApplicationTestsVerification
+getDetailsByUserNameNoDetailsFound$AssertingExceptionMessage  Time elapsed: 0.022 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected org.opentest4j.AssertionFailedError to be thrown, but nothing was thrown.
+	at com.verification.logical.UserDataApplicationTestsVerification.getDetailsByUserNameNoDetailsFound$AssertingExceptionMessage(UserDataApplicationTestsVerification.java:48)
+
+getDetailsByUserNameNoDetailsFound$UsageOfAssertThrows  Time elapsed: 0.068 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+userDataService.getDetailsByUserName(
+    <any string>
+);
+-> at com.verification.logical.UserDataApplicationTestsVerification.getDetailsByUserNameNoDetailsFound$UsageOfAssertThrows(UserDataApplicationTestsVerification.java:39)
+Actually, there were zero interactions with this mock.
+
+	at com.verification.logical.UserDataApplicationTestsVerification.getDetailsByUserNameNoDetailsFound$UsageOfAssertThrows(UserDataApplicationTestsVerification.java:39)
+

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.verification.structural.UserDataServiceImplVerification
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in com.verification.structural.UserDataServiceImplVerification
+annotations$ServiceAnnotation  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.verification.structural.UserDataServiceImplVerification.annotations$ServiceAnnotation(UserDataServiceImplVerification.java:30)
+
+annotations$TransactionalAnnotation  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.structural.UserDataServiceImplVerification.annotations$TransactionalAnnotation(UserDataServiceImplVerification.java:43)
+
+annotations$UserDataRepository  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.verification.structural.UserDataServiceImplVerification.annotations$UserDataRepository(UserDataServiceImplVerification.java:71)
+
